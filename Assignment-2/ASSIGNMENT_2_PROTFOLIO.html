@@ -1,0 +1,396 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prathamesh Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Scroll Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+scroll-behavior:smooth;
+font-family:Arial;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(to right,#0d6efd,#001f3f);
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+
+/* Section Title */
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-weight:bold;
+}
+
+/* Cards */
+
+.card{
+transition:0.4s;
+border:none;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Skill bars */
+
+.skill-bar{
+height:10px;
+background:#ddd;
+border-radius:10px;
+}
+
+.skill-fill{
+height:10px;
+background:#0d6efd;
+border-radius:10px;
+}
+
+/* Buttons */
+
+.btn-primary{
+transition:0.3s;
+}
+
+.btn-primary:hover{
+transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+background:#001f3f;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.social i{
+font-size:22px;
+margin:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.social i:hover{
+color:#0d6efd;
+transform:scale(1.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">Prathamesh</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Hello I'm <b>Prathamesh</b></h1>
+
+<h3 id="typing"></h3>
+
+<a href="#projects" class="btn btn-light mt-3">View My Work</a>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="container my-5" data-aos="fade-up">
+
+<h2 class="section-title">About Me</h2>
+
+<p class="text-center">
+
+I am a passionate web developer interested in building modern,
+responsive web applications and solving real-world problems.
+I enjoy learning new technologies and continuously improving my skills.
+
+</p>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills" class="container my-5">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="row">
+
+<div class="col-md-6 mb-4" data-aos="fade-right">
+
+<h6>HTML</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+
+<h6 class="mt-3">CSS</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+
+<h6 class="mt-3">JavaScript</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+
+</div>
+
+<div class="col-md-6 mb-4" data-aos="fade-left">
+
+<h6>React</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+
+<h6 class="mt-3">Node.js</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+
+<h6 class="mt-3">Bootstrap</h6>
+<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education" class="container my-5">
+
+<h2 class="section-title">Education</h2>
+
+<div class="row">
+
+<div class="col-md-6 mb-4" data-aos="fade-up">
+
+<div class="card p-4">
+
+<h5>Bachelor of Computer Science</h5>
+
+<p><strong>PCCOE College</strong></p>
+
+<p>2023 - 2027</p>
+
+<p>
+Focused on Data Structures, Web Development,
+Database Systems and Software Engineering.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4" data-aos="fade-up">
+
+<div class="card p-4">
+
+<h5>Super Abhinav college</h5>
+
+<p><strong>Abhinav Junior College</strong></p>
+
+<p>2021 - 2023</p>
+
+<p>
+Science stream with focus on Mathematics and Computer Science.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects" class="container my-5">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4" data-aos="zoom-in">
+
+<div class="card p-4">
+
+<h5>Student Analytics Dashboard</h5>
+
+<p>
+Interactive dashboard to visualize student
+attendance and performance using charts.
+</p>
+
+<p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+
+<a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+<a href="#" class="btn btn-dark btn-sm">GitHub</a>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4" data-aos="zoom-in">
+
+<div class="card p-4">
+
+<h5>Local Service Booking Platform</h5>
+
+<p>
+Platform where users can book nearby services
+like electricians and technicians.
+</p>
+
+<p><strong>Tech Stack:</strong> MERN Stack</p>
+
+<a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+<a href="#" class="btn btn-dark btn-sm">GitHub</a>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4" data-aos="zoom-in">
+
+<div class="card p-4">
+
+<h5>Leather E-Commerce Website</h5>
+
+<p>
+Online store for leather products with product
+listing and checkout functionality.
+</p>
+
+<p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap</p>
+
+<a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+<a href="#" class="btn btn-dark btn-sm">GitHub</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="container my-5" data-aos="fade-up">
+
+<h2 class="section-title">Contact Me</h2>
+
+<form class="w-75 mx-auto">
+
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Your Name">
+</div>
+
+<div class="mb-3">
+<input type="email" class="form-control" placeholder="Your Email">
+</div>
+
+<div class="mb-3">
+<textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+</div>
+
+<div class="text-center">
+<button class="btn btn-primary">Send Message</button>
+</div>
+
+</form>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2027 Prathamesh Portfolio</p>
+
+<div class="social">
+
+<i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-instagram"></i>
+
+</div>
+
+</footer>
+
+<!-- JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+/* Typing animation */
+
+const text="Full Stack Developer | Tech Enthusiast";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,70);
+}
+}
+
+typing();
+
+</script>
+
+</body>
+</html>
